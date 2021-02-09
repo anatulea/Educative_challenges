@@ -202,7 +202,13 @@ class LinkedList:
         print(dt, " is not in List!")
         return None
 
+"""
+The algorithm is very similar to delete_at_head. The only difference is that you need to keep track of two nodes, current_node and previous_node.
 
+current_node will always stay one step ahead of previous_node. Whenever current_node becomes the node to be deleted, the previous_node starts pointing at the node next to current_node. If current_node is the last element, previous_node will simply point to None.
+
+
+"""
 def delete(lst, value):
     deleted = False
     if lst.is_empty():  # Check if list is empty -> Return False

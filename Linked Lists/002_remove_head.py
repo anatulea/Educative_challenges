@@ -35,7 +35,7 @@ def remove_head(lst):
         print("list is empty")
         return False
     
-    if lst.head== lst.tail:
+    if lst.head == lst.tail:
         lst.head = None
         lst.tail = None
 
