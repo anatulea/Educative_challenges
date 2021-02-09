@@ -36,10 +36,9 @@ def remove_tail(lst):
         print("List is empty")
         return False
     
-    if lst.head == lst.tail:
+    if lst.head.next_node is None:
         lst.head = None
-        lst.tail = None
-    
+        
     else:
         curr_node = lst.head
         prev = curr_node
@@ -78,5 +77,8 @@ lst.print_list() # 9 ->3 -> None
 insert_at_head(lst, 99) 
 lst.print_list()
 remove_tail(lst)
-lst.print_list()
-lst.print_list()
+lst.print_list() # 99 ->9  -> None
+remove_tail(lst)
+lst.print_list() # 99  -> None
+remove_tail(lst)
+lst.print_list() # List is empty
