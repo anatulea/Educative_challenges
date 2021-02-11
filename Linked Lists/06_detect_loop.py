@@ -41,7 +41,8 @@ def detect_loop(lst):
 
 
 # EDUCATIVE SOLUTION 
-
+# TIME O(n)
+# SPACE O(1)
 from LinkedList import LinkedList
 # Floyd's Cycle Finding Algorithm
 #   - Traverse linked list using two pointers.
